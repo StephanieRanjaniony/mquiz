@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textColor="@color/black"
-        android:text="00:20"
+        android:text="00:00"
        android:layout_alignParentEnd="true"/>
 
     <LinearLayout
