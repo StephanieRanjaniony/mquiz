@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".q2">
+    android:background="@drawable/backgroundhome"
+    android:padding="16dp"
+    tools:context=".q1">
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="@color/black"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/qst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question: 1/x"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/chrono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="00:20"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/qst1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/radiobtn"
+            android:text="Le langage {ε, ab, aabb, aaabbb, ...} (mots formés d'occurrences du symbole a suivies d'autant d'occurrences du symbole b) est un langage algébrique. ?\n\n Sélectionnez une réponse :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="129dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="377dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="209dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radiobtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faux" />
+
+            <RadioButton
+                android:id="@+id/radiobtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vrai" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnvalider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiobtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginRight="173dp"
+        android:text="Valider" />
+
+
+</RelativeLayout>
