@@ -20,7 +20,7 @@ public class q1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q1);
-        btn = (Button) findViewById(R.id.btnvalider);
+        btn = (Button) findViewById(R.id.button);
 
 
         btn.setOnClickListener(new View.OnClickListener() {
