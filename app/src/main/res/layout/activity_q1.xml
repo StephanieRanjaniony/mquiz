@@ -158,6 +158,6 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:onClick="ok"
-            android:text="VALIDER" />
+            android:text="CONFIRMER" />
     </LinearLayout>
 </RelativeLayout>
